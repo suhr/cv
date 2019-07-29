@@ -1,0 +1,6 @@
+.ninja_deps
+.ninja_log
+*.aux
+*.log
+*.out
+*.sty
