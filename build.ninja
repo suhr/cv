@@ -1,0 +1,4 @@
+rule xelatex
+  command = xelatex $in
+
+build cv.pdf cv.aux cv.log: xelatex cv.tex

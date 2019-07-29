@@ -1,0 +1,40 @@
+\documentclass[11pt, a4paper, sans]{moderncv}
+
+\usepackage[margin=3cm]{geometry}
+\usepackage{fontspec}
+
+\setsansfont{PT Sans}
+
+\moderncvtheme[black]{classic}
+\renewcommand*{\emailsymbol}{}
+
+\firstname{Gleb}
+\familyname{Shabanov}
+\title{Software developer}
+\address{Saint-Petersburg}{Russia}
+\email{shabanov.ga@protonmail.com}
+
+\begin{document}
+
+\maketitle
+
+\section*{Experience}
+\cventry{2018--now}{Junior software developer}{Zerho LLC}{Tox-rs}{}{
+Documented the onion routing of the tox protocol, created ws-tox middleware and WebSocket based ws-tox-protocol for a Tox web client. \newline{} Maintained rstox bindings to c-toxcore.
+}
+
+\section*{Education}
+
+\cventry{2016--now}{Technical physics}{Peter the Great St. Petersburg Polytechnic University}{}{}{Student (completed six semesters)}
+
+\section*{Languages}
+
+\cvitemwithcomment{Russian}{Native speaker}{}
+\cvitemwithcomment{English}{Fair (upper intermediate)}{}
+
+\section*{Software skills}
+
+\cvitem{Good level}{Rust, Git}
+\cvitem{Basic level}{Typescript, Python, Nix, HTML, CSS, C}
+
+\end{document}
