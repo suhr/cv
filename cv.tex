@@ -8,24 +8,27 @@
 \moderncvtheme[black]{classic}
 \renewcommand*{\emailsymbol}{}
 
+\AtBeginDocument{\hypersetup{colorlinks=true, linkcolor=red}}
+
 \firstname{Gleb}
 \familyname{Shabanov}
 \title{Software developer}
 \address{Saint-Petersburg}{Russia}
 \email{shabanov.ga@protonmail.com}
+\homepage{https://github.com/suhr}
 
 \begin{document}
 
 \maketitle
 
 \section*{Experience}
-\cventry{2018--now}{Junior software developer}{Zerho LLC}{Tox-rs}{}{
+\cventry{2018--2019}{Junior software developer}{Zerho LLC}{Tox-rs}{}{
 Documented the onion routing of the tox protocol, created ws-tox middleware and WebSocket based ws-tox-protocol for a Tox web client. \newline{} Maintained rstox bindings to c-toxcore.
 }
 
 \section*{Education}
 
-\cventry{2016--now}{Technical physics}{Peter the Great St. Petersburg Polytechnic University}{}{}{Student (completed six semesters)}
+\cventry{2016--2019}{Technical physics}{Peter the Great St. Petersburg Polytechnic University}{}{}{Incomplete}
 
 \section*{Languages}
 
@@ -35,6 +38,29 @@ Documented the onion routing of the tox protocol, created ws-tox middleware and 
 \section*{Software skills}
 
 \cvitem{Good level}{Rust, Git}
-\cvitem{Basic level}{Typescript, Python, Nix, HTML, CSS, C}
+\cvitem{Basic level}{Typescript, Python, Nix, HTML, CSS, C, Prolog, SQL, TLA+}
+
+\section*{Pet projects and contributions}
+
+\cvitem{Tox-rs}{There are PRs outside Zerho: \href{https://github.com/tox-rs/tox/pull/419}{migrating Tox-rs to an actual Tokio version}
+and \href{https://github.com/tox-rs/tox/pull/420}{splitting Tox-rs into separate crates}.}
+
+\cvitem{Razbor}{\href{https://github.com/razbor-rs/razbor}{Razbor} is a binary format specification language (WIP). It allows to specify a binary format in a formal way
+and generate encoders and decoders for the format. Beside the compiler, there's also an incomplete specification of
+the Tox protocol binary format: \href{https://github.com/razbor-rs/tox-razbor}{tox-razbor}.}
+
+\cvitem{Blues}{\href{https://github.com/suhr/blues}{Blues} is a dialect Lambda Prolog (WIP). It is created as a tool for prototyping compiler passes for Razbor.
+The name is inspired by an another language called \href{https://github.com/astampoulis/makam}{Makam}.}
+
+\section*{Writings}
+
+\cvitem{Conc}{There are several writings on the Conc programming language. \href{https://suhr.github.io/wcpl/intro.html}{WCPL} an overview of the idea.
+Beside it, there are several incomplete articles (
+    \href{https://suhr.github.io/papers/calg.html}{calg},
+    \href{https://suhr.github.io/papers/cpat.html}{cpat},
+    \href{https://suhr.github.io/papers/opcalg.html}{opcalg}
+) on the theory. A basic type system for Conc is \href{https://github.com/suhr/makam-examples/}{described} using Makam language.}
+
+\cvitem{Gfx-rs}{\href{https://suhr.github.io/gsgt/}{Graphics by Squares} is a tutorial on the pre-ll gfx-rs.}
 
 \end{document}
